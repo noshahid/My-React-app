@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 export default function Navbar({ title, abouttitle }) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand text-white" href="/">
             {title}
           </a>
           <button
@@ -23,12 +23,16 @@ export default function Navbar({ title, abouttitle }) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a
+                  className="nav-link active text-white"
+                  aria-current="page"
+                  href="/"
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link text-white" href="/">
                   {abouttitle}
                 </a>
               </li>
@@ -40,7 +44,7 @@ export default function Navbar({ title, abouttitle }) {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-primary" type="submit">
                 Search
               </button>
             </form>
