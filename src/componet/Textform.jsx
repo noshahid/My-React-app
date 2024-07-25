@@ -14,7 +14,7 @@ export default function Textform(props) {
 
   return (
     <div>
-      <h1>{props.heading}</h1>
+      <h1 class="my3">{props.heading}</h1>
       <div class="mb-3">
         <textarea
           class="form-control"
